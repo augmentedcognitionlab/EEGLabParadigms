@@ -14,6 +14,7 @@
             %% Load Data
             % Load original dataset
             %
+            % remember to change the directory to fit your experiment. 
             fprintf('\n\n\n**** %s: Loading dataset ****\n\n\n');
             fprintf(files(n).name);
             EEG = pop_loadset('filename', [files(n).name], 'filepath', 'D:\\ArtInHosp\\EEGLAB_Ready\\processed\\NoBadCh');
@@ -27,7 +28,7 @@
             
             %run ica
             EEG = pop_runica(EEG, 'extended',1,'stop',1e-07,'interupt','on');
-             
+            %plase rememeber to change directory. 
             EEG.setname = strcat(EEG.setname, '_ICA');                  
             EEG = pop_saveset(EEG, 'filename', [EEG.setname '.set'], 'filepath', ['D:\ArtInHosp\EEGLAB_Ready\processed\NoBadCh\\ica']);
             fprintf('\n\n\n**** %s: DONE AND SAVED ****\n\n\n');

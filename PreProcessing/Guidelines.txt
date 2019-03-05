@@ -34,3 +34,10 @@ or visually inspect it.
 6. run Epoch_Arts.m
 This will epoch the data and remove non epoch
 related data from the dataset. 
+
+7. run SeperateAbsFig_Arts.m 
+this script will create and save the number 
+of conditions you have in your dataset. 
+now it is into two conditions. However it can 
+be into as many as you want, simply just 
+edit the file. 
