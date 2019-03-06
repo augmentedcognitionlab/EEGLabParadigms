@@ -1,0 +1,19 @@
+The analytical paradigms found in this folder are at the current state altered to work with the art in hospital dataset. 
+those without the A_M prefix are analyzing two conditions up against each other. 
+In case you have an experiment consisting of two different conditions these files are the one to use. 
+Just rememeber to change the output file names, as they are currently working with Figurative and abstract as the condition names. 
+you can change it to what ever you want. 
+Also, change the baseline time point and the length of the epoch in the files in order to tailore it to your experiment. 
+
+The analysis paradigms found in this folder is to create TSE maps (Temporal Spectral Evolution maps)
+maps for each person.
+average maps 
+std maps 
+Kruskal wallis significant maps.
+
+First you adjust the file 
+extractTSEForAllCh.m to match your data then you run it. 
+it may take a while. 
+then you adjust createTSEmaps.m 
+Now the average, std and significnat different visuals matches that of EEGLAB and can be used for further inspection 
+
