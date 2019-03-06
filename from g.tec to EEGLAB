@@ -7,4 +7,11 @@ when done safe the montage.
 now open up EEGLAB - be sure to have the two g.tec import plug-ins installed 
 one for the dataset and one for importing location.
 load in the montage file into matlab 
-inside the EEGLAB plugin folder find g.tec inport folder and the function 
+inside the preprocessing folder there is a subfolder with a file called NewMon2EEGlab.m. 
+open it. 
+now simply use this function to create a location file EEGLAB can understand by writing something like
+NewMon2EEGlab(Mon,'locations.xyz')
+in Matlab.
+the .xyz is important as EEGLAB will understand this as the location file. 
+now you have your location file ready. 
+and you are ready to run the first preprocess file in the preprocessing folder called 'filtersAndLocation.m'
