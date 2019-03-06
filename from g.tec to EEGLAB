@@ -1,0 +1,10 @@
+# first time you process you data from g.Tec to EEGLAB do the following. 
+
+in g.Tec open the g.MONcreator module 
+specify which channel belongs to which electrode location 
+when done safe the montage. 
+
+now open up EEGLAB - be sure to have the two g.tec import plug-ins installed 
+one for the dataset and one for importing location.
+load in the montage file into matlab 
+inside the EEGLAB plugin folder find g.tec inport folder and the function 
