@@ -12,6 +12,9 @@ Looking into the Analytics folder the current paradigms consist of analyzing and
 
 # important for EEGLAB
 in EEGLAB you are adviced to have the following plugin installed 
+
 gtec import plugin
+
 MARA plugin for ICA component extraction help 
+
 Darbeliai plugin for creating ERP average maps and understand how the different ERP datasets behaves compared to each other. 
