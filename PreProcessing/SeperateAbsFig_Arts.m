@@ -1,3 +1,4 @@
+%******WRITTEN BY ANDREAS WULFF-ABRAMSSON*****
 % Clear memory and the command window
     
 
