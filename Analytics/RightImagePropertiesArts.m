@@ -1,3 +1,4 @@
+%******WRITTEN BY ANDREAS WULFF-ABRAMSSON*****
 %add correct properties for imagesc created for ERSP Art in hospital
 %experiment. 
 
