@@ -1,3 +1,5 @@
+%******WRITTEN BY ANDREAS WULFF-ABRAMSSON*****
+
 kruskalWalERSP  = 1;
 kruskalWalERSPStat = 1;
 total = yPos*xPos*electrodes; 
