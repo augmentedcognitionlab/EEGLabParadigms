@@ -1,3 +1,4 @@
+%******EDITED BY ANDREAS WULFF-ABRAMSSON*****
 % montage2eeglab
 % INPUT: montage - gtec Montage used for measuring the positions
 % positionMatrix - measured postions in format (channels x 3 for x,y,z)
