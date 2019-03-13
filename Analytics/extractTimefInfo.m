@@ -1,3 +1,5 @@
+%******WRITTEN BY ANDREAS WULFF-ABRAMSSON*****
+
 %getting the relative power data out of the time-frequency analysis 
 %each electrode will have a matrix each with time and power of the
 %different frequencies
