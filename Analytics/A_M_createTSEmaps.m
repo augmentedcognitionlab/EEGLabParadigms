@@ -1,3 +1,5 @@
+%******WRITTEN BY ANDREAS WULFF-ABRAMSSON*****
+
 %creates maps of the stds, average and the tests and format everyone of
 %them so they follow the same standard as the the maps created by the ERSP
 %maps
