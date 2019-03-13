@@ -1,3 +1,4 @@
+%******WRITTEN BY ANDREAS WULFF-ABRAMSSON*****
 % EEGLAB history file generated on the 31-Mar-2018
 % ------------------------------------------------
 %loading g.tec files, extracting triggers, adding location and extracting
