@@ -1,3 +1,5 @@
+%******WRITTEN BY ANDREAS WULFF-ABRAMSSON*****
+
 % EEGLAB 
 % Before running this script please open all datasets you would like to
 % analyse in EEGLAB
