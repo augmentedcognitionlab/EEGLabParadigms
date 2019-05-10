@@ -1,0 +1,17 @@
+the first steps you need to do in order to analyze the PSD of your epochs 
+1. 
+open the extractSpectrogram.m. 
+change it so it fits with the epoch you want to analyze 
+repeat changing and running it so you have extracted all PSD info from all the wished events. 
+
+2. 
+When comparing two different types of events with each other modify and use PsdSignAnalysis 
+it will provide you with a nice overview of all channels within the different frequency bands and how different the two 
+conditions are from each other 
+
+3. 
+when comparing more than two conditions with each other run the ManyBoxPlot.m script. 
+you may change it to fit the numbers of conditions you are dealing with, therefore there is also another altered version 
+which is tailored to another experiment. 
+
+good luck
