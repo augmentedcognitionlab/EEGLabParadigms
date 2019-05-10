@@ -1,3 +1,9 @@
+% written by Andreas Wulff-Abramsson 
+
+% before running this find all "winning" and change it to the condition you want to analyze 
+% change  the folder from where it shall load the data to your own folder 
+% line 31 change the range - -199.2188  996.0938 to the range of your Epoch
+
 % EEGLAB history file generated on the 13-Mar-2019
 % ------------------------------------------------
 % Clear memory and the command WinningLeveldow
