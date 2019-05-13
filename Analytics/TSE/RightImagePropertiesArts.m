@@ -9,7 +9,8 @@ function RightImagePropertiesArts(Title, gca, type)
 ax = gca; 
 
     ax.XTick = [0.0; 17.38-4.7; 34.77-4.7; 52.15-4.7; 69.53-4.7; 86.91-4.7; 104.29-4.7; 121.67-4.7; 139.05-4.7; 156.46-4.7; 173.81-4.7; 191.25-4.7];
-    ax.XTickLabel = {'-5','0','2.5','5','7.5','10','12.5','15','17.5','20','22.5','25'};
+    ax.XTickLabel = {'-5','0','3.5','7','10.5','14','17.5','21','24.5','28','31.5','35'};
+    % for light experiment ax.XTickLabel = {'-5','0','2.5','5','7.5','10','12.5','15','17.5','20','22.5','25'};
     ax.XLabel.String = 'Seconds';
     ax.YTick = [0;79;158;237;317;396;475;555;634;713;793];
     ax.YTickLabel = {'0','5','10','15','20','25','30','35','40','45','50'};
@@ -20,7 +21,7 @@ ax = gca;
       colormap(jet)  
     
     elseif type == 2 
-    ax.CLim = [-3 3];
+    ax.CLim = [-5 5];
       colormap(BlueRedColormap)  
     elseif type == 3
      colormap(jet)       
