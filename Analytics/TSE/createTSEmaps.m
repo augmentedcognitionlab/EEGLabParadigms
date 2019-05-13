@@ -75,3 +75,5 @@ for e = 1:20 %the number of electrodes
     imagesc(statE)
     RightImagePropertiesArts(titleStdFig , gca);
 end 
+    IsolateSignificantAreas(locations, avrAbs, 'Abstract', avrFig, 'Figurative', stat);
+end

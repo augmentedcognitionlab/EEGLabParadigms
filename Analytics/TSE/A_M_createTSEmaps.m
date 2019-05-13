@@ -250,4 +250,24 @@ for e = 1:20 %the number of electrodes
     imagesc(stat_ApMm_AmMmE)
     RightImagePropertiesArts(titleStdFig , gca, 1);
     
-end 
+    
+    
+end
+%isolate the ERD And ERS responding to the significant areas. 
+
+    IsolateSignificantAreas(locations, avrApMp, 'A+M+', avrAmMm, 'A-M-', stat_ApMp_AmMm);
+    IsolateSignificantAreas(locations, avrApMp, 'A+M+', avrApMm, 'A+M-', stat_ApMp_ApMp);
+    IsolateSignificantAreas(locations, avrApMp, 'A+M+', avrAmMp, 'A-M+', stat_ApMp_AmMp);
+    IsolateSignificantAreas(locations, avrAmMp, 'A-M+', avrApMm, 'A+M-', stat_AmMp_ApMm);
+    IsolateSignificantAreas(locations, avrAmMp, 'A-M+', avrAmMm, 'A-M-', stat_AmMp_AmMm);
+    IsolateSignificantAreas(locations, avrApMm, 'A+M-', avrAmMm, 'A-M-', stat_ApMm_AmMm);
+
+% now find the significant components which are agreed among the
+% comparissons 
+
+    IsolateSignificantAreasFrom3Comp(locations, avrAmMp, 'A-M+', stat_ApMp_AmMp, stat_AmMp_AmMm, stat_AmMp_ApMm);
+    IsolateSignificantAreasFrom3Comp(locations, avrAmMm, 'A-M-', stat_ApMp_AmMm, stat_AmMp_AmMm, stat_AmMp_ApMm);
+    IsolateSignificantAreasFrom3Comp(locations, avrApMp, 'A+M+', stat_ApMp_AmMp, stat_ApMp_AmMm, stat_ApMp_ApMm);
+    IsolateSignificantAreasFrom3Comp(locations, avrAmMm, 'A-M-', stat_AmMp_AmMm, stat_ApMp_AmMm, stat_AmMm_ApMm);
+    
+end
