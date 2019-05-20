@@ -58,7 +58,7 @@ for e = 1:16 %the number of electrodes
     %without bootstrap comparisson. 
     
     [Greenersp(n,e,:,:),itc,powbase,times,freqs,erspboot,itcboot] = newtimef( EEG.data(e,:,:), EEG.pnts, [EEG.xmin EEG.xmax]*1000, EEG.srate, [3 0.5],  'baseline',[-5000 0], 'freqs', [0.5 50], 'title', newTitle);
-            pop_newtimef( EEG, e, 2, [-5000  29996], [3         0.5] , 'topovec', 2, 'elocs', EEG.chanlocs, 'chaninfo', EEG.chaninfo, 'caption', electrodeInfo.labels, 'baseline',[-5000 0], 'freqs', [0.5 50], 'plotphase', 'off', 'padratio', 1);
+            pop_newtimef( EEG, 2, e, [-5000  29996], [3         0.5] , 'topovec', 2, 'elocs', EEG.chanlocs, 'chaninfo', EEG.chaninfo, 'caption', electrodeInfo.labels, 'baseline',[-5000 0], 'freqs', [0.5 50], 'plotphase', 'off', 'padratio', 1);
            % pop_newtimef( EEG, 1, 13, [-5000  39996], [3         0.5] , 'topovec', 13, 'elocs', EEG.chanlocs, 'chaninfo', EEG.chaninfo, 'caption', 'T8', 'baseline',[-5000 0], 'plotphase', 'off', 'padratio', 1, 'winsize', 1280);
     sub = num2str(noComp);
     
